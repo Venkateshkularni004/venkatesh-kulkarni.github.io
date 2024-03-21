@@ -758,6 +758,13 @@ chatbotId="Ia7OHqQnjwBoNIZ7k0td7"
 domain="www.chatbase.co"
 defer>
 </script>
+  <script>
+      (function() {
+        if (document.referrer && document.location.host && document.referrer.match(new RegExp("^https?://" + document.location.host))) {
+          document.getElementById("back-link").setAttribute("href", document.referrer);
+        }
+      })();
+    </script>
 </body>
 
 </html>
